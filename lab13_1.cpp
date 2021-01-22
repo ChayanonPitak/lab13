@@ -7,7 +7,7 @@ void insertionSort(T d[],int N){
 	{
 		int tempIndex = i;
 		T tempValue = d[i];
-		for (int j = i ; j > 0 ; j--) if (d[i] > d[j-1]) tempIndex = j-1;
+		for (int j = i ; j > 0 ; j--) if (d[i] > d[j-1]) tempIndex = j-1; else break;
 		for (int j = i ; j >= tempIndex ; j--)
 		{
 			if (j == tempIndex) d[j] = tempValue;
